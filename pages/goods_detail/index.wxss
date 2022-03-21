@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2984187 */
+  src: url('//at.alicdn.com/t/font_2984187_e2dys591pxl.woff2?t=1638525732661') format('woff2'), url('//at.alicdn.com/t/font_2984187_e2dys591pxl.woff?t=1638525732661') format('woff'), url('//at.alicdn.com/t/font_2984187_e2dys591pxl.ttf?t=1638525732661') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-gouwuchekong:before {
+  content: "\e600";
+}
+.icon-kefu:before {
+  content: "\e88f";
+}
+.icon-fenxiang:before {
+  content: "\e62f";
+}
+.icon-shoucang:before {
+  content: "\e60c";
+}
+.content {
+  position: relative;
+}
+.content .swriperImg swiper {
+  height: 65vw;
+  text-align: center;
+}
+.content .swriperImg swiper image {
+  width: 60%;
+}
+.content .goods_price {
+  color: red;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+}
+.content .goods_name_row {
+  display: flex;
+  padding: 10rpx 10rpx;
+  border-top: 4rpx #ccc solid;
+  border-bottom: 4rpx #ccc solid;
+}
+.content .goods_name_row .goods_name {
+  flex: 6;
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  border-right: 5rpx solid black;
+  padding-right: 10rpx;
+}
+.content .goods_name_row .goods_collect {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content .goods_info {
+  padding-bottom: 90rpx;
+}
+.content .goods_info .goods_info_title {
+  color: red;
+  padding: 10rpx;
+  font-weight: 700;
+}
+.content .footer {
+  position: fixed;
+  width: 100%;
+  height: 90rpx;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3rpx solid #666;
+  background-color: white;
+}
+.content .footer .footer_item {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.content .footer .footer_item .item {
+  width: 100%;
+  color: #666;
+  font-size: 35rpx;
+  text-align: center;
+}
+.content .footer .footer_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.content .footer .footer_cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 2;
+  color: white;
+  font-size: 35rpx;
+  background-color: coral;
+}
+.content .footer .footer_buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 35rpx;
+  background-color: crimson;
+}

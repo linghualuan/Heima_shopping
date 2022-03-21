@@ -1,0 +1,36 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "分类界面",
+                    "pathName": "pages/category/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "商品详情",
+                    "pathName": "pages/goods_list/index",
+                    "query": "cid=5",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods_list/index",
+                    "pathName": "pages/goods_list/index",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

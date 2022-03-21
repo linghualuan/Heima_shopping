@@ -1,0 +1,51 @@
+<view class="wrap">
+    <view class="btn" wx:if="{{!address.userName}}">
+        <button bindtap="handleAddress">添加收货地址</button>
+    </view>
+
+    <view class="addressInfo" wx:else>
+        <view info_name>{{address.userName}}</view>
+        <view info_address>{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}</view>
+    </view>
+    <view class="title">
+        购物车
+    </view>
+    <view class="cart" wx:for="{{cart}}">
+        <view class="cart_check">
+            <checkbox-group wx:key="item.goods_id" bindchange="handleGoodsChange" data-id="{{item.goods_id}}">
+                <checkbox checked="{{item.checked}}"></checkbox>
+            </checkbox-group>
+        </view>
+        <view class="cart_image">
+            <navigator>
+                <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+            </navigator>
+        </view>
+        <view class="cart_info">
+            <view class="info_title">{{item.goods_name}}</view>
+            <view class="info_num">
+                <view class="num_price">￥{{item.goods_price}}</view>
+                <view class="num_count">
+                    <view class="count_sub" bindtap="handleSub" data-id="{{item.goods_id}}">-</view>
+                    <view class="count_num">{{item.num}}</view>
+                    <view class="count_sum" bindtap="handleSum" data-id="{{item.goods_id}}">+</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="footer_check">
+        <checkbox-group bindchange="handleAllChecked">
+            <checkbox checked="{{allChecked}}">全选</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="footer_info">
+        <view class="info_total">合计：</view>
+        <view class-="info_tool">
+            <view class="tool_price">￥{{totalPrice}}</view>
+            <view class="tool_title">包含运费</view>
+        </view>
+    </view>
+    <view class="footer_account" bindtap="handlePay">结算({{number}})</view>
+</view>

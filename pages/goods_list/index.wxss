@@ -1,0 +1,23 @@
+.goods_list navigator {
+  display: flex;
+}
+.goods_list navigator .goods_img {
+  flex: 2;
+}
+.goods_list navigator .goods_img image {
+  width: 100%;
+}
+.goods_list navigator .goods_item {
+  flex: 5;
+  padding: 20rpx;
+}
+.goods_list navigator .goods_item .item.title {
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_list navigator .goods_item .item.price {
+  color: red;
+}

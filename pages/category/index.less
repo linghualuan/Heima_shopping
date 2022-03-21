@@ -1,0 +1,47 @@
+page{
+    height:100%;
+    .cates{
+        .cates_content{
+            height:~'calc(100vh - 90rpx)';
+            display: flex;
+            justify-content: center;
+            .left_menu{
+                flex:2;
+                .menu_item{
+                    text-align: center;
+                    padding-top:20rpx;
+                    padding-bottom: 20rpx;
+                    font-size: 30rpx;
+                    color: #666;
+                }
+                .active{
+                    border-left:red 8rpx solid;
+                }
+            }
+            .right_menu{
+                flex:5;
+                .right_content{
+                    .goods_title{
+                        text-align: center;
+                    }
+                    .goods_content{
+                        display: flex;
+                        flex-wrap: wrap;
+                        navigator{
+                            width:33.33%;
+                            float: left;
+                            padding:20rpx;
+                            image{
+                                width:100%;
+                            }
+                            .goods_name{
+                                text-align: center;
+                                font-size: 25rpx;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

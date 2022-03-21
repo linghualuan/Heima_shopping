@@ -1,0 +1,107 @@
+.wrap {
+  position: relative;
+  padding-bottom: 100px;
+}
+.wrap .title {
+  padding: 20rpx 0;
+  border-top: 4rpx solid #666;
+  border-bottom: 4rpx solid #666;
+}
+.wrap .cart {
+  border-bottom: 3rpx solid #ccc;
+  padding-bottom: 10rpx;
+  display: flex;
+}
+.wrap .cart .cart_check {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.wrap .cart .cart_image {
+  flex: 2;
+}
+.wrap .cart .cart_image navigator {
+  width: 100%;
+}
+.wrap .cart .cart_image navigator image {
+  width: 100%;
+  height: 100%;
+}
+.wrap .cart .cart_info {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrap .cart .cart_info .info_title {
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.wrap .cart .cart_info .info_num {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .cart .cart_info .info_num .num_price {
+  color: red;
+}
+.wrap .cart .cart_info .info_num .num_count {
+  display: flex;
+}
+.wrap .cart .cart_info .info_num .num_count .count_sub {
+  flex: 1;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #666;
+}
+.wrap .cart .cart_info .info_num .num_count .count_num {
+  flex: 1;
+  margin: 0 5rpx;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.wrap .cart .cart_info .info_num .num_count .count_sum {
+  flex: 1;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #666;
+}
+.footer {
+  width: 100%;
+  height: 100rpx;
+  background-color: burlywood;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.footer .footer_check {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.footer .footer_info {
+  flex: 3;
+  justify-content: space-around;
+  display: flex;
+}
+.footer .footer_info .info_tool .tool_price {
+  color: red;
+}
+.footer .footer_account {
+  flex: 1;
+}

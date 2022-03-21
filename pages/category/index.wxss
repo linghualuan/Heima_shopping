@@ -1,0 +1,43 @@
+page {
+  height: 100%;
+}
+page .cates .cates_content {
+  height: calc(100vh - 90rpx);
+  display: flex;
+  justify-content: center;
+}
+page .cates .cates_content .left_menu {
+  flex: 2;
+}
+page .cates .cates_content .left_menu .menu_item {
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+page .cates .cates_content .left_menu .active {
+  border-left: red 8rpx solid;
+}
+page .cates .cates_content .right_menu {
+  flex: 5;
+}
+page .cates .cates_content .right_menu .right_content .goods_title {
+  text-align: center;
+}
+page .cates .cates_content .right_menu .right_content .goods_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+page .cates .cates_content .right_menu .right_content .goods_content navigator {
+  width: 33.33%;
+  float: left;
+  padding: 20rpx;
+}
+page .cates .cates_content .right_menu .right_content .goods_content navigator image {
+  width: 100%;
+}
+page .cates .cates_content .right_menu .right_content .goods_content navigator .goods_name {
+  text-align: center;
+  font-size: 25rpx;
+}
